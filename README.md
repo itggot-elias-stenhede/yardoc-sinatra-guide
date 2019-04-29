@@ -1,5 +1,8 @@
 # YARDoc Tutorial
 
+## Generated Site
+(https://itggot.github.io/yardoc-sinatra-guide/docs/top-level-namespace.html)[https://itggot.github.io/yardoc-sinatra-guide/docs/top-level-namespace.html]
+
 ## Installation
 `gem install yard yard-sinatra`
 
