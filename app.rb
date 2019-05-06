@@ -4,7 +4,7 @@ require 'slim'
 
 enable :sessions
 
-include Model
+include Model # Wat dis?
 
 # Display Landing Page
 #
