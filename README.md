@@ -6,6 +6,7 @@
 Append these to your Gemfile
 
 `gem 'yard'`
+
 `gem 'yard-sinatra', git: 'https://github.com/chrisb/yard-sinatra'`
 
 
