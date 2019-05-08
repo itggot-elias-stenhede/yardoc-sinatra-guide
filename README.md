@@ -3,7 +3,13 @@
 [Generated Site](https://itggot.github.io/yardoc-sinatra-guide/docs/top-level-namespace.html)
 
 ## Installation
-`gem install yard yard-sinatra`
+Append these to your Gemfile
+
+`gem 'yard'`
+`gem 'yard-sinatra', git: 'https://github.com/chrisb/yard-sinatra'`
+
+
+Run `bundle install`
 
 ## Usage
 
