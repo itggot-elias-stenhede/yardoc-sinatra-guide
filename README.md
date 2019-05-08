@@ -22,4 +22,4 @@ The above command creates a doc-directory containing the generated documentation
 See [app.rb](./app.rb)
 
 ## Documenting functions
-See [app.rb](./model/model.rb)
+See [model.rb](./model/model.rb)
