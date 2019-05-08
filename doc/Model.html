@@ -24,6 +24,8 @@
 
   <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
 
+  <script type="text/javascript" charset="utf-8" src="js/custom.js"></script>
+
 
   </head>
   <body>
@@ -78,7 +80,7 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>model.rb</dd>
+    <dd>model/model.rb</dd>
   </dl>
   
 </div>
@@ -116,7 +118,31 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Inserts a new row in the articles table.</p>
+<p>Attempts to insert a new row in the articles table.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete_article-instance_method" title="#delete_article (instance method)">#<strong>delete_article</strong>(article_id, params)  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Attempts to delete a row from the articles table.</p>
 </div></span>
   
 </li>
@@ -194,6 +220,54 @@
 </li>
 
       
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#register_user-instance_method" title="#register_user (instance method)">#<strong>register_user</strong>(params)  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Attempts to create a new user.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update_article-instance_method" title="#update_article (instance method)">#<strong>update_article</strong>(article_id, params)  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Attempts to update a row in the articles table.</p>
+</div></span>
+  
+</li>
+
+      
     </ul>
   
 
@@ -215,7 +289,7 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Inserts a new row in the articles table</p>
+<p>Attempts to insert a new row in the articles table</p>
 
 
   </div>
@@ -299,22 +373,165 @@
   
 </ul>
 
+
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-20
-21
-22
 23
-24</pre>
+24
+25
+26
+27</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'model.rb', line 20</span>
+      <pre class="code"><span class="info file"># File 'model/model.rb', line 23</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create_article'>create_article</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+    <span class='comment'># ...
+</span>    <span class='comment'># ...
+</span>    <span class='comment'># ...
+</span><span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete_article-instance_method">
+  
+    #<strong>delete_article</strong>(article_id, params)  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Attempts to delete a row from the articles table</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>article_id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The article&#39;s ID</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>params</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>form data</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    
+    
+    <p class="tag_title">Options Hash (<tt>params</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">title</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The title of the article</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">content</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The content of the article</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><ul><li>
+<p>:error [Boolean] whether an error occured</p>
+</li><li>
+<p>:message [String] the error message</p>
+</li></ul>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+55
+56
+57
+58
+59</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'model/model.rb', line 55</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delete_article'>delete_article</span><span class='lparen'>(</span><span class='id identifier rubyid_article_id'>article_id</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
     <span class='comment'># ...
 </span>    <span class='comment'># ...
 </span>    <span class='comment'># ...
@@ -400,6 +617,8 @@
   
 </ul>
 
+
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -407,13 +626,19 @@
 
 
 8
-9</pre>
+9
+10
+11
+12</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'model.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'model/model.rb', line 8</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_find_articles'>find_articles</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
+    <span class='comment'># ...
+</span>    <span class='comment'># ...
+</span>    <span class='comment'># ...
+</span><span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -518,20 +743,28 @@
   
 </ul>
 
+
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-36
-37</pre>
+71
+72
+73
+74
+75</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'model.rb', line 36</span>
+      <pre class="code"><span class="info file"># File 'model/model.rb', line 71</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get_article'>get_article</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
+    <span class='comment'># ...
+</span>    <span class='comment'># ...
+</span>    <span class='comment'># ...
+</span><span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -644,20 +877,307 @@
   
 </ul>
 
+
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-47
-48</pre>
+85
+86
+87
+88
+89</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'model.rb', line 47</span>
+      <pre class="code"><span class="info file"># File 'model/model.rb', line 85</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_login'>login</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
+    <span class='comment'># ...
+</span>    <span class='comment'># ...
+</span>    <span class='comment'># ...
+</span><span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="register_user-instance_method">
+  
+    #<strong>register_user</strong>(params)  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Attempts to create a new user</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>params</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>form data</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>params</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">username</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The username</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">password</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The password</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">repeat_password</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The repeated password</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><ul><li>
+<p>:error [Boolean] whether an error occured</p>
+</li><li>
+<p>:message [String] the error message if an error occured</p>
+</li><li>
+<p>:user_id [Integer] The user&#39;s ID if the user was created</p>
+</li></ul>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+102
+103
+104
+105
+106</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'model/model.rb', line 102</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_register_user'>register_user</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+    <span class='comment'># ...
+</span>    <span class='comment'># ...
+</span>    <span class='comment'># ...
+</span><span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update_article-instance_method">
+  
+    #<strong>update_article</strong>(article_id, params)  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Attempts to update a row in the articles table</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>article_id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The article&#39;s ID</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>params</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>form data</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    
+    
+    <p class="tag_title">Options Hash (<tt>params</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">title</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The title of the article</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">content</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The content of the article</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><ul><li>
+<p>:error [Boolean] whether an error occured</p>
+</li><li>
+<p>:message [String] the error message</p>
+</li></ul>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+39
+40
+41
+42
+43</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'model/model.rb', line 39</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update_article'>update_article</span><span class='lparen'>(</span><span class='id identifier rubyid_article_id'>article_id</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+    <span class='comment'># ...
+</span>    <span class='comment'># ...
+</span>    <span class='comment'># ...
+</span><span class='kw'>end</span></pre>
     </td>
   </tr>
 </table>
@@ -668,7 +1188,7 @@
 </div>
 
       <div id="footer">
-  Generated on Mon Apr 29 13:46:23 2019 by
+  Generated on Wed May  8 11:27:44 2019 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.19 (ruby-2.6.1).
 </div>
