@@ -8,6 +8,7 @@
 Create a file named `Gemfile` in your project root
 
 Append these to your Gemfile
+
 `source "https://rubygems.org"`
 
 `gem 'yard'`
