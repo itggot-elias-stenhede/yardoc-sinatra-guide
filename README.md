@@ -9,11 +9,12 @@ Create a file named `Gemfile` in your project root
 
 Append these to your Gemfile
 
-`source "https://rubygems.org"`
+```Gemfile
+source "https://rubygems.org"
 
-`gem 'yard'`
-
-`gem 'yard-sinatra', git: 'https://github.com/chrisb/yard-sinatra'`
+gem 'yard'
+gem 'yard-sinatra', git: 'https://github.com/chrisb/yard-sinatra'
+```
 
 
 Run `bundle install`
