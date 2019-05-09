@@ -3,7 +3,12 @@
 [Generated Site](https://itggot.github.io/yardoc-sinatra-guide/docs/top-level-namespace.html)
 
 ## Installation
+`gem install bundler`
+
+Create a file named `Gemfile` in your project root
+
 Append these to your Gemfile
+`source "https://rubygems.org"`
 
 `gem 'yard'`
 
