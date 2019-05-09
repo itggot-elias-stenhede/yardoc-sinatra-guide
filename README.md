@@ -14,7 +14,7 @@ Run `bundle install`
 
 ## Usage
 
-`yardoc --plugin yard-sinatra app.rb path/to/model.rb`
+`bundle exec yardoc --plugin yard-sinatra app.rb path/to/model.rb`
 
 The above command creates a doc-directory containing the generated documentation site
 
